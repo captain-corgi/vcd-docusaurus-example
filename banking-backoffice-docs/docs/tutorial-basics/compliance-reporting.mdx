@@ -1,0 +1,310 @@
+---
+sidebar_position: 3
+---
+
+# Generating Compliance Reports
+
+Learn how to generate, customize, and distribute compliance reports required for banking operations. This tutorial covers regulatory reporting, audit trails, and automated report generation.
+
+## Before You Begin
+
+Ensure you have:
+
+- **Compliance Officer** or **Reporting** permissions
+- **Report generation** access in the system
+- **Understanding** of regulatory requirements
+- **Approval** from compliance department for custom reports
+
+## Types of Compliance Reports
+
+The Banking Back Office System supports various regulatory and internal reports:
+
+### Federal Regulatory Reports
+
+#### Currency Transaction Reports (CTR)
+
+```md title="CTR Requirements"
+- Required for cash transactions over $10,000
+- Must be filed within 15 days
+- Includes customer identification and transaction details
+- Automated generation available
+```
+
+#### Suspicious Activity Reports (SAR)
+
+```md title="SAR Requirements"
+- Filed for suspicious transactions or patterns
+- 30-day filing deadline from detection
+- Requires detailed narrative description
+- Confidential - restricted access only
+```
+
+#### Bank Secrecy Act (BSA) Reports
+
+```md title="BSA Compliance"
+- Customer identification program reports
+- Anti-money laundering monitoring
+- Record keeping compliance
+- Training completion tracking
+```
+
+## Generating Standard Reports
+
+Navigate to **Reports** → **Compliance Reports** in the system:
+
+### Daily Compliance Dashboard
+
+```md title="Daily Report Generation"
+1. Select "Daily Compliance Summary"
+2. Choose date range (default: previous business day)
+3. Select report format (PDF, Excel, CSV)
+4. Add email recipients
+5. Generate and distribute
+```
+
+### Monthly Regulatory Package
+
+```md title="Monthly Report Process"
+1. Access "Monthly Regulatory Reports"
+2. Verify all daily reports are complete
+3. Run data validation checks
+4. Generate consolidated package
+5. Review with compliance officer
+6. Submit to regulatory authorities
+```
+
+## Custom Report Builder
+
+For specialized reporting needs:
+
+### Report Parameters
+
+You can customize reports with various parameters:
+
+| Parameter | Description | Options |
+|-----------|-------------|---------|
+| Date Range | Reporting period | Daily, Weekly, Monthly, Custom |
+| Account Types | Filter by account type | Checking, Savings, Business, All |
+| Transaction Types | Filter by transaction | Deposits, Withdrawals, Transfers, All |
+| Amount Thresholds | Filter by amount | $1K+, $10K+, Custom |
+| Customer Segments | Filter by customer type | Individual, Business, High-Risk |
+
+### Building a Custom Report
+
+```md title="Custom Report Steps"
+1. Navigate to Reports → Custom Report Builder
+2. Select data sources (accounts, transactions, customers)
+3. Choose fields to include
+4. Set filters and parameters
+5. Configure formatting options
+6. Save report template for reuse
+7. Schedule automated generation (optional)
+```
+
+## Report Security and Distribution
+
+### Access Controls
+
+:::danger Security Requirements
+
+All compliance reports contain sensitive information and must be handled according to bank security policies.
+
+:::
+
+#### Report Access Levels
+
+- **View Only**: Can view reports but not generate or distribute
+- **Generate**: Can create reports for their department
+- **Distribute**: Can send reports to authorized recipients
+- **Admin**: Full report management capabilities
+
+#### Secure Distribution
+
+```md title="Distribution Security"
+✓ Encrypted email transmission
+✓ Password-protected files
+✓ Audit trail of all access
+✓ Automatic expiration of shared links
+✓ Recipient verification required
+```
+
+## Automated Reporting
+
+### Scheduled Reports
+
+Set up automatic generation and distribution:
+
+```jsx title="Automated Report Configuration"
+// Example configuration for automated CTR reporting
+{
+  reportType: "CTR",
+  schedule: "daily",
+  time: "06:00",
+  recipients: ["compliance@yourbank.com", "operations@yourbank.com"],
+  format: "PDF",
+  encryption: true,
+  retentionDays: 2555 // 7 years
+}
+```
+
+### Alert Thresholds
+
+Configure automatic alerts for compliance issues:
+
+:::tip Proactive Monitoring
+
+Set up alerts to catch compliance issues before they become problems.
+
+:::
+
+```md title="Alert Configuration"
+- Large cash transactions (>$9,000)
+- Multiple transactions by same customer
+- Unusual transaction patterns
+- Missing documentation
+- Overdue report filings
+```
+
+## Interactive Report Features
+
+### Real-Time Data Validation
+
+Test your understanding of compliance reporting:
+
+export const ComplianceQuiz = ({question, answer, explanation}) => (
+  <div
+    style={{
+      backgroundColor: '#f0f8ff',
+      borderRadius: '10px',
+      padding: '15px',
+      margin: '10px 0',
+      border: '2px solid #4a90e2',
+      cursor: 'pointer',
+    }}
+    onClick={() => {
+      const userAnswer = prompt(question);
+      if (userAnswer && userAnswer.toLowerCase().includes(answer.toLowerCase())) {
+        alert(`Correct! ${explanation}`);
+      } else {
+        alert(`Not quite. The answer is: ${answer}. ${explanation}`);
+      }
+    }}>
+    <strong>Compliance Check:</strong> {question}
+    <br />
+    <em>Click to answer</em>
+  </div>
+);
+
+<ComplianceQuiz
+  question="What is the filing deadline for a Currency Transaction Report (CTR)?"
+  answer="15 days"
+  explanation="CTRs must be filed within 15 days of the transaction date."
+/>
+
+<ComplianceQuiz
+  question="At what dollar amount must a CTR be filed for cash transactions?"
+  answer="$10,000"
+  explanation="Any cash transaction over $10,000 requires a CTR filing."
+/>
+
+## Report Quality Assurance
+
+### Data Validation Checks
+
+Before finalizing any compliance report:
+
+```md title="Quality Assurance Checklist"
+✓ All required fields completed
+✓ Data accuracy verified
+✓ Mathematical calculations correct
+✓ Date ranges accurate
+✓ Customer information validated
+✓ Regulatory format compliance
+✓ Supervisor review completed
+```
+
+### Common Report Errors
+
+| Error Type | Cause | Solution |
+|------------|-------|----------|
+| Missing Data | Incomplete transactions | Run data completeness check |
+| Format Issues | Wrong template used | Verify regulatory requirements |
+| Date Mismatches | Incorrect reporting period | Double-check date parameters |
+| Calculation Errors | System configuration | Validate formulas and totals |
+
+## Audit Trail and Documentation
+
+### Report Audit Requirements
+
+Every compliance report must maintain:
+
+```md title="Audit Documentation"
+- Generation timestamp and user
+- Data sources and parameters used
+- Review and approval history
+- Distribution records
+- Any modifications or corrections
+- Retention and disposal records
+```
+
+### Record Retention
+
+:::info Retention Requirements
+
+Compliance reports must be retained according to federal banking regulations:
+
+- CTRs: 5 years
+- SARs: 5 years  
+- BSA Reports: 5 years
+- Internal Audit Reports: 7 years
+
+:::
+
+## Troubleshooting Report Issues
+
+### Common Problems
+
+| Issue | Symptoms | Resolution |
+|-------|----------|------------|
+| Report Won't Generate | Error messages, timeouts | Check data sources, contact IT |
+| Missing Transactions | Incomplete data | Verify transaction posting dates |
+| Format Errors | Regulatory rejection | Review format requirements |
+| Access Denied | Permission errors | Contact system administrator |
+
+### When to Escalate
+
+- **Data integrity issues**: Contact IT immediately
+- **Regulatory deadline concerns**: Notify compliance officer
+- **System outages**: Use backup reporting procedures
+- **Suspicious data patterns**: Alert security team
+
+## Best Practices
+
+### Report Generation
+
+- **Generate reports early** in the reporting cycle
+- **Validate data** before finalizing
+- **Maintain backup copies** of all reports
+- **Document any anomalies** or exceptions
+- **Follow approval workflows** for all reports
+
+### Distribution and Storage
+
+- **Use secure channels** for all transmissions
+- **Verify recipient authorization** before sending
+- **Maintain distribution logs** for audit purposes
+- **Store reports** in approved systems only
+- **Follow retention schedules** strictly
+
+## Next Steps
+
+After mastering compliance reporting:
+
+1. Learn [Advanced Analytics](/docs/reporting/analytics)
+2. Study [Audit Procedures](/docs/security/audit-logs)
+3. Explore [Risk Management](/docs/security/risk-management)
+4. Complete [Compliance Certification](/docs/training/compliance-cert)
+
+---
+
+**Remember**: Compliance reporting is critical for regulatory adherence. Always verify accuracy and follow established procedures before submitting any reports.

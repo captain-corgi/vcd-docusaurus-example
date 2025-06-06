@@ -1,0 +1,29 @@
+sarah_chen:
+  name: Sarah Chen
+  title: IT Operations Manager
+  url: mailto:sarah.chen@yourbank.com
+  image_url: /img/authors/sarah-chen.jpg
+
+michael_rodriguez:
+  name: Michael Rodriguez
+  title: Compliance Officer
+  url: mailto:michael.rodriguez@yourbank.com
+  image_url: /img/authors/michael-rodriguez.jpg
+
+jennifer_kim:
+  name: Jennifer Kim
+  title: Back Office Systems Administrator
+  url: mailto:jennifer.kim@yourbank.com
+  image_url: /img/authors/jennifer-kim.jpg
+
+david_thompson:
+  name: David Thompson
+  title: Security Operations Lead
+  url: mailto:david.thompson@yourbank.com
+  image_url: /img/authors/david-thompson.jpg
+
+lisa_patel:
+  name: Lisa Patel
+  title: Training & Documentation Specialist
+  url: mailto:lisa.patel@yourbank.com
+  image_url: /img/authors/lisa-patel.jpg

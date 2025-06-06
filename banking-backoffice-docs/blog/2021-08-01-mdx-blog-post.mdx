@@ -1,0 +1,208 @@
+---
+slug: security-alert-phishing-attempts
+title: Security Alert - Increased Phishing Attempts Targeting Banking Staff
+authors: [david_thompson]
+tags: [security, announcements, training]
+---
+
+We've detected a significant increase in phishing attempts specifically targeting banking employees. All staff must remain vigilant and follow security protocols to protect our systems and customer data.
+
+:::danger Security Alert
+
+Immediate action required: Review and implement enhanced email security measures.
+
+:::
+
+{/*truncate*/}
+
+## Current Threat Landscape
+
+Our cybersecurity team has identified several sophisticated phishing campaigns targeting financial institutions. These attacks are specifically designed to appear as legitimate communications from:
+
+- Federal regulatory agencies (FDIC, Federal Reserve)
+- Software vendors (core banking systems, compliance tools)
+- Internal IT communications
+- Customer service requests
+
+## Common Attack Patterns
+
+### 1. Regulatory Compliance Emails
+
+**What to Look For**:
+
+- Urgent requests for compliance documentation
+- Threats of regulatory action for non-compliance
+- Requests to click links to "verify" information
+- Suspicious sender addresses (e.g., fdic-compliance&#64;gmail.com)
+
+:::warning Example Phishing Email
+
+**Subject**: "URGENT: FDIC Compliance Verification Required"
+
+**From**: fdic-compliance&#64;regulatory-update.com
+
+**Content**: "Your institution must verify compliance status within 24 hours or face penalties. Click here to access the verification portal."
+
+**Red Flags**:
+
+- Non-official domain
+- Urgent language
+- Generic greeting
+- Suspicious link
+
+:::
+
+### 2. System Update Notifications
+
+**What to Look For**:
+
+- Fake software update notifications
+- Requests for login credentials
+- Links to download "security patches"
+- Impersonation of IT support
+
+### 3. Customer Service Impersonation
+
+**What to Look For**:
+
+- Emails claiming to be from customers
+- Requests to process urgent transactions
+- Attachments containing "account information"
+- Pressure to bypass normal verification procedures
+
+## Immediate Actions Required
+
+### For All Staff
+
+1. **Verify Before You Click**
+   - Always verify sender identity through official channels
+   - Never click links in suspicious emails
+   - Report suspicious emails immediately
+
+2. **Enhanced Verification**
+   - Use multi-factor authentication for all systems
+   - Verify any unusual requests via phone
+   - Double-check all external communications
+
+3. **Regular Training**
+   - Complete monthly security awareness training
+   - Stay updated on latest threat patterns
+   - Practice incident response procedures
+
+### For IT Administrators
+
+```bash
+# Example: Enhanced email filtering rules
+# (This would be implemented by IT team)
+if (sender_domain != official_domain &&
+    content_contains("urgent", "compliance", "verify")) {
+    quarantine_email();
+    alert_security_team();
+}
+```
+
+## Interactive Security Check
+
+Test your knowledge with this quick security assessment:
+
+<button onClick={() => {
+  const answer = prompt("A customer emails asking you to transfer $50,000 urgently due to a 'family emergency.' What should you do first?");
+  if (answer && answer.toLowerCase().includes("verify") || answer.toLowerCase().includes("call")) {
+    alert("Correct! Always verify the customer's identity through official channels before processing any urgent requests.");
+  } else {
+    alert("Remember: Always verify customer identity through official channels (phone call to registered number) before processing urgent requests.");
+  }
+}}>
+Take Security Quiz
+</button>
+
+## Reporting Procedures
+
+### If You Receive a Suspicious Email
+
+1. **Do NOT**:
+   - Click any links
+   - Download attachments
+   - Reply to the email
+   - Forward to colleagues
+
+2. **DO**:
+   - Forward the email to security&#64;yourbank.com
+   - Report to your supervisor immediately
+   - Document the incident in the security log
+   - Delete the email after reporting
+
+### Emergency Contacts
+
+- **Security Team**: ext. 9999 (24/7)
+- **IT Help Desk**: ext. 2222
+- **Compliance Officer**: ext. 4444
+
+## Recent Incident Examples
+
+### Case Study 1: Fake FDIC Email
+
+- **Target**: Compliance department
+- **Method**: Urgent compliance verification request
+- **Outcome**: Detected and blocked by alert staff member
+- **Lesson**: Always verify regulatory communications through official channels
+
+### Case Study 2: System Update Scam
+
+- **Target**: IT administrators
+- **Method**: Fake core banking system update
+- **Outcome**: Prevented by following verification procedures
+- **Lesson**: All system updates come through official vendor channels only
+
+## Enhanced Security Measures
+
+### New Policies Effective Immediately
+
+1. **Email Verification Protocol**
+   - All external emails requesting action must be verified
+   - Use official contact information only
+   - Document all verification attempts
+
+2. **Multi-Factor Authentication**
+   - Required for all system access
+   - Cannot be disabled without security approval
+   - Regular token rotation required
+
+3. **Incident Response**
+   - Immediate reporting of suspicious activity
+   - Quarterly security drills
+   - Enhanced monitoring of all communications
+
+## Training Schedule
+
+### Mandatory Sessions
+
+| Date | Topic | Duration | Audience |
+|------|-------|----------|----------|
+| This Week | Phishing Recognition | 30 min | All Staff |
+| Next Week | Email Security | 45 min | All Staff |
+| Month End | Incident Response | 60 min | Supervisors |
+
+### Online Resources
+
+- Security awareness portal: Available 24/7
+- Phishing simulation tests: Monthly
+- Security policy updates: Quarterly
+
+## Remember
+
+:::tip Security Best Practice
+
+**When in doubt, verify!** It's better to take an extra few minutes to verify a request than to compromise our security and customer trust.
+
+:::
+
+**Your vigilance protects our customers, our institution, and your colleagues. Stay alert, stay secure!**
+
+---
+
+**Next Steps**:
+
+1. Complete the mandatory phishing awareness training
+2. Review and update your security practices
+3. Report any suspicious activity immediately

@@ -1,0 +1,39 @@
+system-updates:
+  label: System Updates
+  permalink: /system-updates
+  description: Updates and changes to the banking back office system
+
+compliance:
+  label: Compliance
+  permalink: /compliance
+  description: Regulatory compliance and policy updates
+
+security:
+  label: Security
+  permalink: /security
+  description: Security alerts, updates, and best practices
+
+training:
+  label: Training
+  permalink: /training
+  description: Training materials and educational content
+
+announcements:
+  label: Announcements
+  permalink: /announcements
+  description: Important announcements and notifications
+
+maintenance:
+  label: Maintenance
+  permalink: /maintenance
+  description: System maintenance and downtime notifications
+
+features:
+  label: New Features
+  permalink: /features
+  description: New features and functionality releases
+
+procedures:
+  label: Procedures
+  permalink: /procedures
+  description: Updated procedures and workflows
